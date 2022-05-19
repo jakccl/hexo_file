@@ -113,6 +113,21 @@
     <a href="/blog/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/blog/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/blog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/blog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
@@ -141,6 +156,104 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://jakccl.github.io/2022/05/19/2022_05_19_note_for_hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="JAK">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2022/05/19/2022_05_19_note_for_hexo/" class="post-title-link" itemprop="url">2022</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-05-19 14:25:21 / Modified: 14:37:45" itemprop="dateCreated datePublished" datetime="2022-05-19T14:25:21+08:00">2022-05-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="What-I-setup"><a href="#What-I-setup" class="headerlink" title="What I setup"></a>What I setup</h1><ul>
+<li>inital hexo blog</li>
+<li>seperate git repository<ul>
+<li>for static site public web</li>
+<li>orginal hexo develop </li>
+</ul>
+</li>
+<li>change theme to NEXT</li>
+</ul>
+<h2 id="How-to-start"><a href="#How-to-start" class="headerlink" title="How to start"></a>How to start</h2><ol>
+<li>Install nodejs</li>
+<li>install npm ci</li>
+<li>install hexo module</li>
+<li>inital hexo project <code>hexo init blog</code></li>
+</ol>
+<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><p>These are the setting I change</p>
+<h3 id="change-url"><a href="#change-url" class="headerlink" title="change url"></a>change url</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url: https://jakccl.github.io</span><br><span class="line">root: /blog</span><br></pre></td></tr></table></figure>
+
+<h3 id="change-deploy-setting"><a href="#change-deploy-setting" class="headerlink" title="change deploy setting"></a>change deploy setting</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/jakccl/blog.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<h2 id="create-page"><a href="#create-page" class="headerlink" title="create page"></a>create page</h2><ul>
+<li><p>add about page</p>
+<blockquote>
+<p>hexo add page about</p>
+</blockquote>
+</li>
+<li><p>add tags page</p>
+<blockquote>
+<p>hexo add page tags</p>
+</blockquote>
+</li>
+<li><p>add categories</p>
+<blockquote>
+<p>hexo add page categories</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="config-yml-for-next-theme"><a href="#config-yml-for-next-theme" class="headerlink" title="_config.yml for next theme"></a>_config.yml for next theme</h2><ul>
+<li>add menu<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -349,7 +462,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/blog/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
