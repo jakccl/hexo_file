@@ -7,13 +7,14 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: JAK
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://jakccl.github.io/
+url: https://jakccl.github.io
+root: /blog
 permalink: :year/:month/:day/:title/
 permalink_defaults: 
 pretty_urls: 
@@ -41,7 +42,7 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
-relative_link: true
+relative_link: false
 future: true
 highlight:
   enable: true
